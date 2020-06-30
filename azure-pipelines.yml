@@ -26,11 +26,6 @@ steps:
   displayName: 'Use Python $(python.version)'
 
 - script: |
-    pip install pytest
-    pytest
-  displayName: 'pytest'
-
-- script: |
       pip install pytest
       pytest --junitxml=../../reports/basic-test.xml
       displayName: 'Run tests'
