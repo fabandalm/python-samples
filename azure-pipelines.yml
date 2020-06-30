@@ -29,12 +29,7 @@ steps:
       pip install pytest
       pytest
       displayName: 'Run tests'
-
-# - task: PublishTestResults@2
-#   inputs:
-#     testResultsFiles: 'reports/basic-test.xml'
-#     testRunTitle: '$(Agent.OS) - $(Build.DefinitionName) - Python $(python.version)'
-#   condition: succeededOrFailed()
+      
 
 
 
