@@ -27,7 +27,7 @@ steps:
 
 - script: |
       pip install pytest
-      displayName: 'Run tests'
+  displayName: 'Run tests'
       
 
 
