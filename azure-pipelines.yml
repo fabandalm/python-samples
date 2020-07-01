@@ -32,9 +32,8 @@ steps:
 
 - task: PublishTestResults@2
   inputs:
-    testRunner: "VSTEST"
-    # testResultsFiles: 'reports/basic.xml'
-    testResultsFiles: '**/TEST-*.trx'
+    # testRunner: "VSTEST"
+    # testResultsFiles: '**/TEST-*.trx'
     testRunTitle: '$(Agent.OS) - $(Build.DefinitionName) - Python $(python.version)'
     publishRunAttachments: true
   condition: succeededOrFailed()
