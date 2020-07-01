@@ -27,7 +27,16 @@ steps:
 
 - script: |
       pip install pytest
+      pytest --junitxml=../../reports/basic.xml 
   displayName: 'Run tests'
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFiles: 'reports/basic.xml'
+    testRunTitle: '$(Agent.OS) - $(Build.DefinitionName) - Python $(python.version)'
+  condition: succeededOrFailed()
+
+  
       
 
 
