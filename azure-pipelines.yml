@@ -27,7 +27,7 @@ steps:
 
 - script: |
       pip install pytest
-      pytest --junitxml=../../reports/basic.xml 
+      pytest --junitxml=reports/basic.xml 
   displayName: 'Run tests'
 
 - task: PublishTestResults@2
