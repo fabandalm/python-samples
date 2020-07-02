@@ -34,6 +34,7 @@ steps:
   inputs:
     # testRunner: "VSTEST"
     # testResultsFiles: '**/TEST-*.trx'
+    testResultsFiles: 'reports/basic.xml'
     testRunTitle: '$(Agent.OS) - $(Build.DefinitionName) - Python $(python.version)'
     publishRunAttachments: true
   condition: succeededOrFailed()
