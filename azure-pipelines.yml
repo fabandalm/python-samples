@@ -34,7 +34,7 @@ steps:
   displayName: 'Run tests'
 
 - script: |
-      echo $test $name-env
+      echo $test $name_env
   condition: always()
   displayName: 'Environment Variable'
 
