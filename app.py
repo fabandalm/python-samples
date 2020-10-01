@@ -1,5 +1,7 @@
 def fibonacci(n):
-    if n <= 1:
-        return 1
-    else:
-        return fibonacci(n-2) + fibonacci(n-1)
+    a, b = 0, 1
+
+    for _ in range(n):
+        a, b = b, a+b
+
+    return a
