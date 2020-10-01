@@ -20,7 +20,7 @@ strategy:
       python.version: '3.7'
 
 variables: 
-  - group: var-group 
+  - group: var-group
 
 steps:
 - task: UsePythonVersion@0
