@@ -35,6 +35,7 @@ steps:
 
 - script: |
       echo $test
+  condition: always()
   displayName: 'Environment Variable'
 
 - task: PublishTestResults@2
