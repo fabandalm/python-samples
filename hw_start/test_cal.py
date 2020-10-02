@@ -7,3 +7,4 @@ class TestCalc(unittest.TestCase):
         result = calc.add(10,5)
         self.assertEqual(result,15)
 
+
