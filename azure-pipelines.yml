@@ -30,6 +30,7 @@ steps:
 
 - script: |
       pip install pytest
+      pip install coverage
       pytest --junitxml=reports/basic.xml 
   displayName: 'Run tests'
 
