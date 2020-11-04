@@ -1,3 +1,12 @@
+first = "John"
+last = "Smith"
+
+fullName = f"{first} {last}"
+print(fullName)
+print(fullName.upper())
+print(fullName.title())
+print(fullName.lower())
+
 def greet(first_name, last_name):
     print(f"Hi {first_name} {last_name}")
 
